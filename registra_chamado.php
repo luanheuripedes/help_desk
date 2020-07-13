@@ -20,4 +20,6 @@
     fclose($arquivo); //fecha o arquivo
 
     //echo $texto;
+
+    header('Location: abrir_chamado.php');
 ?>

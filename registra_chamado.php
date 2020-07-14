@@ -16,7 +16,7 @@
 
 
     //Persistir os dados atraves de um arquivo txt
-    $arquivo = fopen('arquivo.txt','a');  //dois parametros('nome do arquivo.txt', 'o que faremos com o arquivo ') //abrindo o arquivo
+    $arquivo = fopen('../../app_help_desk/arquivo.txt','a');  //dois parametros('nome do arquivo.txt', 'o que faremos com o arquivo ') //abrindo o arquivo
 
     fwrite($arquivo, $texto); //dois parametros (o arquivo que abrimos, o que queremos escrever nesse arquivo); //escrevendo o texto
 

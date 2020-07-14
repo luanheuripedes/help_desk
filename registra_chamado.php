@@ -1,15 +1,18 @@
-<?php   
+<?php  
+    
+    session_start();
+    /*
     //recebe os dados do formulario abrir_chamado.php
     echo '<pre>';
         print_r($_POST);//é um array que sao objetos manipulados pela linguagem
     echo '</pre>';
-
+    */
     //trabalhando na montagem do texto
     foreach ($_POST as $indice => $valor) {
         $_POST[$indice] = str_replace('#', '-', $valor);
     }
     //implode('#', $_POST)
-    $texto = implode('#', $_POST) . PHP_EOL;
+    $texto = $_SESSION['id'] . '#' . implode('#', $_POST) . PHP_EOL;
 
 
     //Persistir os dados atraves de um arquivo txt
